@@ -1,11 +1,12 @@
 import './App.css';
+import resumeURL from '/resume.png';
 
 import { Cylinder, OrbitControls, useTexture } from '@react-three/drei';
 import { Canvas } from '@react-three/fiber';
 
 
 function Scene() {
-  const texture = useTexture('/resume.png');
+  const texture = useTexture(resumeURL);
 
   return (<>
       <Cylinder args={[2, 2, 10, 100, 1, true]}>
